@@ -1,0 +1,44 @@
+Criar um repositório Local: git init (Esse comando inicializa o Git no seu projeto. 
+Ou seja, ele cria uma pasta oculta chamada .git onde o Git começará a guardar as versões do seu projeto.)
+
+git status -mosta o estado atual do projeto(Esse comando mostra o que está acontecendo com os arquivos do projeto.)
+Ele responde perguntas como:
+
+Quais arquivos foram modificados?
+
+Quais arquivos ainda não foram adicionados para commit?
+
+Quais estão prontos para commit?
+
+
+
+git add . (Prepara o projeto para uma nova versao'o ponto quer dizer todos os ficheiros')
+Esse comando adiciona todos os arquivos modificados ou novos à área de staging, 
+que é como uma "lista de arquivos prontos para serem salvos".
+O ponto (.) significa: "todos os arquivos do diretório atual e subpastas".
+
+Você também pode adicionar só um arquivo: git add meu_arquivo.java.
+
+
+git commit -m (Para criar uma nova versao)
+4. Criar uma nova versão: git commit -m "mensagem"
+Esse comando registra uma nova versão (commit) com todos os arquivos que estavam no "staging" (git add).
+
+git commit -m "mensagem que explica a mudança"
+A flag -m permite escrever uma mensagem curta e clara explicando o que você fez.
+
+Exemplo:
+git commit -m "Adiciona a função de login"
+
+git log (Ver os his)
+Esse comando mostra o histórico de commits do projeto.
+Você verá:
+Hash do commit
+Autor
+Data
+Mensagem do commit
+
+git  log --oneline
+
+git checkaut hash
+Esse comando permite que você "visite" uma versão anterior do projeto.
